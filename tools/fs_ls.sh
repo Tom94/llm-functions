@@ -8,7 +8,7 @@ set -e
 # @env LLM_OUTPUT=/dev/stdout The output path
 
 main() {
-    ls -1 "$argc_path" >> "$LLM_OUTPUT"
+    ls -la "$argc_path" >> "$LLM_OUTPUT"
 }
 
 eval "$(argc --argc-eval "$0" "$@")"
